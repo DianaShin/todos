@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoListItem from './todo_list_item';
-import TodoListForm from './todo_list_form'
+import TodoListForm from './todo_list_form';
 
 class TodoList extends React.Component {
   constructor(props) {
@@ -14,6 +14,7 @@ class TodoList extends React.Component {
         todo={todo}
         key={idx}
         receiveTodo={this.props.receiveTodo}
+        removeTodo={this.props.removeTodo}
       />);
 
     return(
