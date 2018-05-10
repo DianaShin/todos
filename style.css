@@ -5,3 +5,7 @@
 .todo-detail-view {
   border: 1px solid blue;
 }
+
+.step-list-item {
+  border: 1px solid green;
+}
