@@ -4,7 +4,7 @@ import store from './store/store';
 import { receiveTodo, receiveTodos } from './actions/todo_actions';
 // import App from '../frontend/components/app';
 import Root from './components/root';
-import allTodos from './reducers/selectors';
+import { allTodos } from './reducers/selectors';
 
 window.store = store;
 window.receiveTodo = receiveTodo;
