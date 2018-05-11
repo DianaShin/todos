@@ -4,21 +4,14 @@ export const allTodos = (state) => {
     return arrTodos;
 };
 
-export const stepsByTodoId = ({ steps }, todo_id) => {
+export const stepsByTodoId = ({ steps }, { todo_id }) => {
   const stepsByTodoIdArr = [];
   Object.keys(steps).forEach(stepId => {
     const step = steps[stepId];
-    if (steps[stepId].todo_id === todo_id) stepsByTodoIdArr.push(step);
+    console.log(stepId);
+    console.log(todo_id);
+    console.log(steps[stepId].todoId);
+    if (steps[stepId].todoId === todo_id) stepsByTodoIdArr.push(step);
   });
   return stepsByTodoIdArr;
 };
-
-// export const stepsByTodoId = (state, todoId) => {
-//   let stepsArr = [];
-//   Object.keys(state.steps).forEach(step => {
-//     if (step.todoId === todoId) {
-//       stepsArr.push(step);
-//     }
-//   });
-//   return stepsArr;
-// };

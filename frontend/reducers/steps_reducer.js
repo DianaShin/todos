@@ -6,7 +6,8 @@ const initialStepsState = {
       id: 1,
       title: 'walk to store',
       done: false,
-      todoId: 1
+      todo_id
+: 1
     },
     2: { // this is the step with id = 2
       id: 2,
