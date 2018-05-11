@@ -1,5 +1,6 @@
 import React from 'react';
 import merge from 'lodash/merge';
+import StepForm from './step_form';
 
 class StepListItem extends React.Component {
   constructor(props) {
