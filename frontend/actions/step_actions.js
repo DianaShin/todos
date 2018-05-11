@@ -16,9 +16,9 @@ export const receiveStep = (step) => {
   };
 };
 
-export const removeStep = (id) => {
+export const removeStep = (step) => {
   return {
     type: REMOVE_STEP,
-    id
+    step
   };
 };

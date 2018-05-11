@@ -29,6 +29,10 @@ const stepsReducer = (state = initialStepsState, action) => {
       const newStep = {[action.step.id]: action.step};
       nextState = merge({}, state, newStep);
       return nextState;
+    case REMOVE_STEP:
+      nextState = merge({}, state);
+      delete nextState[action.step.id];
+      return nextState;
     default:
       return state;
   }

@@ -6,7 +6,7 @@ import { receiveStep, removeStep } from '../../actions/step_actions';
 const mapDispatchToProps = (dispatch, {step}) => {
   return {
     removeStep: () => dispatch(removeStep(step)),
-    receiveStep: step => dispatch(receiveStep(step))
+    receiveStep: id => dispatch(receiveStep(id))
   };
 };
 
