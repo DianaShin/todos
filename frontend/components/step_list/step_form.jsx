@@ -7,7 +7,7 @@ class StepForm extends React.Component {
     this.state = {
       title: "",
       done: false,
-      todoId: this.props.id
+      todoId: this.props.todo_id
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -15,14 +15,16 @@ class StepForm extends React.Component {
   update(property) {
     return e => this.setState({[property]: e.target.value});
   }
+
   handleSubmit(e) {
-    e.preventDefault();
-    const step = Object.assign({}. this.state, {id: uniqueId()});
-    this.props.receiveStep(step);
-    this.setState({
-      title: ""
-    });
-  }
+  e.preventDefault();
+  const step = Object.assign({}, this.state, { id: uniqueId() });
+  this.props.receiveStep(step);
+  this.setState({
+    title: ""
+  });
+}
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
