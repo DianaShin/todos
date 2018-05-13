@@ -27,9 +27,11 @@ class StepForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>Title:
+      <form className="step-form" onSubmit={this.handleSubmit}>
+        <label className="add-step">Add a step!
+          <br />
           <input
+            className="step-input"
             type="text"
             ref="title"
             value={this.state.title}
@@ -37,6 +39,7 @@ class StepForm extends React.Component {
             required />
         </label>
         <button
+          className="create"
           type="submit"
           >Create Step!</button>
       </form>

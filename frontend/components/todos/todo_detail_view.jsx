@@ -9,7 +9,6 @@ class TodoDetailView extends React.Component {
   render() {
     return (
       <div className="todo-detail-view">
-        <p>Steps to take: </p>
         <StepList todo_id={ this.props.todo.id } />
       </div>
     );

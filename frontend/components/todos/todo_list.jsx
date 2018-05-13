@@ -19,10 +19,16 @@ class TodoList extends React.Component {
 
     return(
       <div>
-        <ul className="todo-list">
-          { todos}
-        </ul>
-        <TodoListForm receiveTodo={ this.props.receiveTodo }/> // I was not able to see added todo on page, beause I forgot this.props here!!!!!
+        <header className="header">
+          Redux Todo App
+        </header>
+        <div className="todo-list">
+          <ul className="todo-list-items">
+            { todos}
+          </ul>
+          <TodoListForm
+            receiveTodo={ this.props.receiveTodo }/>
+        </div>
       </div>
     );
   }

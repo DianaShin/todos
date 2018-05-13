@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$pink: #FFC3E1;
+$hotpink: #FF69B4;
+$white: #ffffff;
+$gray: #A9A9A9;
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $pink;
+}
+
+label, p, input, button, li {
+  font-family: 'Raleway';
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background-color: $white;
+  border: 3px $hotpink dashed;
+  font-family: 'Frijole', cursive;
+  color: $hotpink;
+  width: 35%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.todo-list-items {
+  width: 75%;
+  margin-right: 16px;
+}
+
+.todo-title {
+  color: $hotpink;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px 15px;
+}
+
+.todo-done {
+  padding-left: 15px;
+}
+
+.todo-body {
+  padding-left: 15px;
+}
+
+.todo-list-form {
+  width: 25%;
+  background-color: $white;
+  border: 3px $hotpink dashed;
+  margin-top: 16px;
+  margin-right: 16px;
+}
+
+.todo-form-title {
+  font-family: 'Frijole', cursive;
+  color: $hotpink;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.todo-list-item {
+  background-color: $white;
+  border: 3px $hotpink dashed;
+  margin-bottom: 16px;
+}
+
+.form-content {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+input.todo-form {
+  width: 90%;
+}
+
+.done, .create {
+  background-color: $hotpink;
+  color: $white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+.undone {
+  background-color: $gray;
+  color: $white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+.steps {
+  background-color: $pink;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.todo-detail-view {
+  padding-left: 15px;
+}
+.remove {
+  background-color: black;
+  color: $white;
+  outline: none;
+  border-radius: 5px;
+}
+
+.step-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-step {
+  font-family: 'Frijole', cursive;
+  color: $hotpink;
+  margin-left: 15px;
+}
+
+.step-input {
+  margin-left: 15px;
+}
+
+.step-form {
+  margin-bottom: 15px;
+}

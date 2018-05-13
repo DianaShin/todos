@@ -17,10 +17,12 @@ class StepListItem extends React.Component {
   render() {
     return (
       <li className="step-list-item">
-        <div>
-          <h3> { this.props.step.title}</h3>
+        <div className="steps">
+          <p> { this.props.step.title}</p>
           <p> {this.props.step.body} </p>
-          <button onClick = {this.toggleStep}>
+          <button
+            className={ this.props.step.done ? "done" : "undone" }
+            onClick = {this.toggleStep}>
               { this.props.step.done ? "Done" : "Not yet"}
           </button>
           <button onClick={ () =>this.props.removeStep(this.props.step.id) }>

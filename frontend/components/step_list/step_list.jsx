@@ -15,7 +15,7 @@ class StepList extends React.Component {
               step={step} />;
           });
     return (
-      <div>
+      <div className="step-items">
         <ul>
           { stepItems }
         </ul>

@@ -31,26 +31,39 @@ class TodoListForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-      <label> Title:
-        <input
-          type="text"
-          value={this.state.title}
-          placeholder="make a todo"
-          onChange={this.updateValue('title')}
-      />
-      </label>
-      <label> Body:
-        <input
-          type="text"
-          value={this.state.body}
-          placeholder="be specific so you can accomplish your todo"
-          onChange={this.updateValue('body')}
+      <form
+        className="todo-list-form"
+        onSubmit={this.handleSubmit}>
+      <header className="todo-form-title">Make a Todo!!</header>
+      <div className="form-content">
+        <label> title:
+          <br />
+          <input
+            className="todo-form"
+            type="text"
+            value={this.state.title}
+            placeholder="make a todo"
+            onChange={this.updateValue('title')}
         />
-      </label>
-      <button type="submit">Create Todo!</button>
+        </label>
+        <br />
+        <label> deets:
+          <br />
+          <input
+            className="todo-form"
+            type="text"
+            value={this.state.body}
+            placeholder="be specific!"
+            onChange={this.updateValue('body')}
+          />
+        </label>
+        <br />
+        <button
+          className="create"
+          type="submit">Create Todo!</button>
+        </div>
       </form>
-    )
+    );
   }
 }
 

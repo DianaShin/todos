@@ -1,11 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Frijole");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #FFC3E1; }
+
+label, p, input, button, li {
+  font-family: 'Raleway'; }
+
+li {
+  list-style: none; }
+
+.header {
+  background-color: #ffffff;
+  border: 3px #FF69B4 dashed;
+  font-family: 'Frijole', cursive;
+  color: #FF69B4;
+  width: 35%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; }
+
+.todo-list {
+  display: flex;
+  flex-direction: row;
+  padding: 15px; }
+
+.todo-list-items {
+  width: 75%;
+  margin-right: 16px; }
+
+.todo-title {
+  color: #FF69B4;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px 15px; }
+
+.todo-done {
+  padding-left: 15px; }
+
+.todo-body {
+  padding-left: 15px; }
+
+.todo-list-form {
+  width: 25%;
+  background-color: #ffffff;
+  border: 3px #FF69B4 dashed;
+  margin-top: 16px;
+  margin-right: 16px; }
+
+.todo-form-title {
+  font-family: 'Frijole', cursive;
+  color: #FF69B4;
+  margin-left: 15px;
+  margin-top: 15px; }
+
 .todo-list-item {
-  border: 1px solid coral;
-}
+  background-color: #ffffff;
+  border: 3px #FF69B4 dashed;
+  margin-bottom: 16px; }
+
+.form-content {
+  margin-left: 15px;
+  margin-top: 15px; }
+
+input.todo-form {
+  width: 90%; }
+
+.done, .create {
+  background-color: #FF69B4;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px; }
+
+.undone {
+  background-color: #A9A9A9;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px; }
+
+.steps {
+  background-color: #FFC3E1;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px; }
 
 .todo-detail-view {
-  border: 1px solid blue;
-}
+  padding-left: 15px; }
 
-.step-list-item {
-  border: 1px solid green;
-}
+.remove {
+  background-color: black;
+  color: #ffffff;
+  outline: none;
+  border-radius: 5px; }
+
+.step-items {
+  display: flex;
+  flex-direction: row; }
+
+.add-step {
+  font-family: 'Frijole', cursive;
+  color: #FF69B4;
+  margin-left: 15px; }
+
+.step-input {
+  margin-left: 15px; }
+
+.step-form {
+  margin-bottom: 15px; }
+
+/*# sourceMappingURL=style.css.map */
