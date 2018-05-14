@@ -93,7 +93,7 @@ li {
     margin-bottom: 15px; }
     .todo-detail-view .step-form .add-step, .todo-detail-view .step-form .step-input {
       margin-left: 15px; }
-    .todo-detail-view .step-form .step-input {
+    .todo-detail-view .step-form .add-step {
       font-family: 'Frijole', cursive;
       color: #FF69B4; }
 
