@@ -11,37 +11,43 @@ label, p, input, button, li {
 li {
   list-style: none; }
 
-.header {
+.header, .empty-todo-list {
   background-color: #ffffff;
   border: 3px #FF69B4 dashed;
   font-family: 'Frijole', cursive;
   color: #FF69B4;
-  width: 35%;
+  width: 40%;
   margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0px;
   text-align: center; }
+
+.empty-todo-list, .todo-list {
+  padding: 15px;
+  text-align: left; }
 
 .todo-list {
   display: flex;
-  flex-direction: row;
-  padding: 15px; }
+  flex-direction: row; }
+  .todo-list .todo-list-items {
+    width: 75%;
+    margin-right: 15px; }
 
-.todo-list-items {
-  width: 75%;
-  margin-right: 16px; }
-
-.todo-title {
-  color: #FF69B4;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0px 15px; }
-
-.todo-done {
-  padding-left: 15px; }
-
-.todo-body {
-  padding-left: 15px; }
+.todo-list-item {
+  background-color: #ffffff;
+  border: 3px #FF69B4 dashed;
+  margin-bottom: 16px; }
+  .todo-list-item .todo-title {
+    color: #FF69B4;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px 15px; }
+  .todo-list-item .todo-done, .todo-list-item .todo-undone, .todo-list-item .todo-body {
+    padding-left: 15px; }
+  .todo-list-item .remove {
+    background-color: cornflowerblue;
+    color: #ffffff;
+    outline: none;
+    border-radius: 5px; }
 
 .todo-list-form {
   width: 25%;
@@ -49,68 +55,46 @@ li {
   border: 3px #FF69B4 dashed;
   margin-top: 16px;
   margin-right: 16px; }
+  .todo-list-form .todo-form-title, .todo-list-form .form-content {
+    font-family: 'Frijole', cursive;
+    color: #FF69B4;
+    margin-left: 15px;
+    margin-top: 15px; }
+  .todo-list-form .todo-form-title {
+    font-family: 'Frijole', cursive;
+    color: #FF69B4; }
+  .todo-list-form input.todo-form {
+    width: 90%; }
 
-.todo-form-title {
-  font-family: 'Frijole', cursive;
-  color: #FF69B4;
-  margin-left: 15px;
-  margin-top: 15px; }
-
-.todo-list-item {
-  background-color: #ffffff;
-  border: 3px #FF69B4 dashed;
-  margin-bottom: 16px; }
-
-.form-content {
-  margin-left: 15px;
-  margin-top: 15px; }
-
-input.todo-form {
-  width: 90%; }
+.done, .create, .undone {
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px; }
 
 .done, .create {
-  background-color: #FF69B4;
-  color: #ffffff;
-  cursor: pointer;
-  outline: none;
-  border-radius: 5px; }
+  background-color: #FF69B4; }
 
 .undone {
-  background-color: #A9A9A9;
-  color: #ffffff;
-  cursor: pointer;
-  outline: none;
-  border-radius: 5px; }
-
-.steps {
-  background-color: #FFC3E1;
-  border-radius: 5px;
-  display: inline-block;
-  margin-bottom: 5px;
-  padding: 5px; }
+  background-color: #A9A9A9; }
 
 .todo-detail-view {
   padding-left: 15px; }
-
-.remove {
-  background-color: black;
-  color: #ffffff;
-  outline: none;
-  border-radius: 5px; }
-
-.step-items {
-  display: flex;
-  flex-direction: row; }
-
-.add-step {
-  font-family: 'Frijole', cursive;
-  color: #FF69B4;
-  margin-left: 15px; }
-
-.step-input {
-  margin-left: 15px; }
-
-.step-form {
-  margin-bottom: 15px; }
+  .todo-detail-view .steps {
+    background-color: #FFC3E1;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px; }
+  .todo-detail-view .step-items {
+    display: flex;
+    flex-direction: row; }
+  .todo-detail-view .step-form {
+    margin-bottom: 15px; }
+    .todo-detail-view .step-form .add-step, .todo-detail-view .step-form .step-input {
+      margin-left: 15px; }
+    .todo-detail-view .step-form .step-input {
+      font-family: 'Frijole', cursive;
+      color: #FF69B4; }
 
 /*# sourceMappingURL=style.css.map */

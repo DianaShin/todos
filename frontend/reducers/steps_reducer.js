@@ -4,13 +4,13 @@ import merge from 'lodash/merge';
 const initialStepsState = {
     1: { // this is the step with id = 1
       id: 1,
-      title: 'walk to store',
+      title: 'finish the todo app',
       done: false,
       todoId: 1
     },
     2: { // this is the step with id = 2
       id: 2,
-      title: 'buy soap',
+      title: 'explain the redux cycle to mom',
       done: false,
       todoId: 1
     }

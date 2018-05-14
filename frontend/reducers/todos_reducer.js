@@ -4,14 +4,14 @@ import merge from 'lodash/merge';
 const initialState = {
   1: {
     id: 1,
-    title: 'wash car',
-    body: 'with soap',
+    title: 'master redux',
+    body: 'no turning back',
     done: false
   },
   2: {
     id: 2,
-    title: 'wash dog',
-    body: 'with shampoo',
+    title: 'dive into flux',
+    body: 'its all about types',
     done: true
   },
 };

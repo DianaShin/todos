@@ -24,7 +24,7 @@ class TodoList extends React.Component {
         </header>
         <div className="todo-list">
           <ul className="todo-list-items">
-            { todos}
+            { this.props.todos.length ? todos : <div className="empty-todo-list">Whoaaa! <br /><br />Your ToDo List is empty!<br /><br /> You must be <p style={{color: 'cornflowerblue', fontFamily: 'Frijole'}}> super productive!</p></div>}
           </ul>
           <TodoListForm
             receiveTodo={ this.props.receiveTodo }/>
